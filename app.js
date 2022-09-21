@@ -1,3 +1,3 @@
-import {Numbers} from "./numbers.js"
+import {numbers} from "./numbers.js"
 
-Numbers();
+numbers();

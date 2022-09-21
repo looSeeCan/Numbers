@@ -1,0 +1,20 @@
+{
+  "type":"module",
+  "name": "numbers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "numbers.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/looSeeCan/Numbers.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/looSeeCan/Numbers/issues"
+  },
+  "homepage": "https://github.com/looSeeCan/Numbers#readme"
+}
