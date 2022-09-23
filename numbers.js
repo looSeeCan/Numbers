@@ -1,5 +1,5 @@
 
-const Numbers = () => {
+const numbers = () => {
 
     (() => {
         console.groupCollapsed("Random integer from -3 to 3");
@@ -116,6 +116,9 @@ const Numbers = () => {
                         weight += input[i];//add it to the weight
             
                         //so it works alright, but what if the last number can be added to another array
+
+                    } else if (input.length -1) {
+                        console.log('hello')
                     };
             
                 };
@@ -136,13 +139,63 @@ const Numbers = () => {
                 return (reorderedArray);
             };
             
-            const luggageArray = ["30, 5, 6, 20, 40"];
+            const luggageArray = ["30, 5, 6, 20, 40, 5"];
             
             const b = luggageLoading(luggageArray);
             console.log("Luggage in containers. lifo", b);
             
         })();
+
+        (() => {
+            const x = [30, 5, 6, 20, 40, 1];
+
+            for (let i = 0; i < x.length; i++) {
+                if (i === x.length -1) {//if the loop is on the last index of the array
+                    console.log(x[i]);
+                } else {
+                    console.log("else:", x[i]);
+                }
+            }
+        })();
+
+        /// finds a specified character(s) and returns it in an array. Returns null if nothing is fuound
+        /// weird. I thought that only if the developer delcared something as "null", then that would return null.
+        /// but here, this returns a null if there is not match
+        (() => {
+            let stringEvalution = String("Book").match(/[r]/g);
+            console.log("stringEvaluation:", stringEvalution);
+        })();
+
+        /// I have an if statement to test truthy or falsy. if true then it will log, if not it wont.
+        (() => {///by placing the first value into () we can treat it as an object and add the .toFixed
+            const x = +(1.1 + 1.3).toFixed(2);
+            console.log(x);
+            if(x === 2.4) {/// 1.1 + 1.3 === 2.4 is not true, because 1.1 + 1.3 will = 2.4000000000000004. A floating point number. The ".toFixed"
+                ///alone will not return a true because the .toFixed returns a string. A trick is to add the "+" in the front
+                console.log(true);
+            }
+        })();
+
+        (() => {
+            
+            let x = 1;
+            const hello = "Hello World";
+            const hello1 = ' ${} Hello World'; console.log(hello1)
+            
+            //Hello World 1
+            const hello2 = hello + " " + x; console.log(hello2);
+
+            const ticks = `${hello} ${x}`; console.log(ticks);
+
+            if(x === 2) {
+                console.log(true);
+            }else {
+                console.log(false);
+            }
+
+
+        })();
 };
 
 
-export {Numbers};
+export {numbers};
