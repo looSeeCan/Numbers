@@ -177,25 +177,10 @@ const numbers = () => {
         })();
 
         (() => {
-            
-            let x = 1;
-            const hello = "Hello World";
-            const hello1 = ' ${} Hello World'; console.log(hello1)
-            
-            //Hello World 1
-            const hello2 = hello + " " + x; console.log(hello2);
-
-            const ticks = `${hello} ${x}`; console.log(ticks);
-
-            if(x === 2) {
-                console.log(true);
-            }else {
-                console.log(false);
-            }
-
+        
 
         })();
 };
-
+//this is a test
 
 export {numbers};
